@@ -1,0 +1,592 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía Única: Quicksand */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Quicksand', sans-serif; }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* Componente Menú Responsive */
+
+aside#menu-moviles { 
+    width: 290px; 
+    height: 100%; 
+    display: block; 
+    margin: 0; 
+    float: none; 
+    position: fixed; 
+    right: -290px; 
+    top: 0; 
+    z-index: 99999; 
+    background: rgba(187, 187, 187, 0.986); 
+}
+
+aside#menu-moviles a#abrir-menu { 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 25px; 
+    left: -50px; 
+    display: block; 
+    text-decoration: none; 
+    color: rgb(2, 30, 66); 
+    font-weight: 600; 
+    font-size: 2em; 
+    line-height: 1em; 
+    transition: all 0.3s ease-in; 
+}
+
+aside#menu-moviles a#abrir-menu:hover { 
+    color: rgb(84, 142, 230); 
+    transition: all 0.3s ease-in 
+}
+
+aside#menu-moviles a#cerrar-menu { 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 25px; 
+    left: -35px; 
+    display: none; 
+    text-decoration: none; 
+    color: rgb(2, 30, 66); 
+    font-weight: 600; 
+    font-size: 2em; 
+    line-height: 1em; 
+    transition: all 0.3s ease-in; 
+}
+
+aside#menu-moviles a#cerrar-menu:hover { 
+    color: rgb(84, 142, 230); 
+    transition: all 0.3s ease-in; 
+}
+
+aside#menu-moviles nav { 
+    width: 60%; 
+    height: auto; 
+    margin: 15% 10%; 
+    float: none; 
+    position: relative; 
+}
+
+aside#menu-moviles nav a { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    color: rgb(2, 30, 66); 
+    font-weight: 600; 
+    font-size: 1em; 
+    padding: 10px 0; 
+    text-decoration: none; 
+    transition: all 0.3s ease-in; 
+}
+
+aside#menu-moviles nav a:hover { 
+    color: rgb(84, 142, 230); 
+    transition: all 0.3s ease-in; 
+}
+
+/* Componente Header con Logo y Menú */
+header { 
+    width: 100%; 
+    height: 80px; 
+    margin: 0; 
+    float: none; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 99990; 
+    overflow: hidden; 
+    background: rgba(230, 230, 230, 0.89);  
+}
+
+header div#capa-superior { 
+    width: 100%; 
+    height: 100px; 
+    display: block; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 2; 
+} 
+
+header div#capa-superior article { 
+    width: 100%; 
+    height: 100px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+}
+
+header div#capa-superior article figure { 
+    width: 100%; 
+    height: 100px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    top: 10px; 
+}
+
+header div#capa-superior article figure a { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    display: block; 
+}
+
+header div#capa-superior article figure a img { 
+    width: auto; 
+    height: 60px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    display: block; 
+}
+
+/* Caja Main */
+main { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+}
+
+/* Slick Slider */
+main section#zona-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+}
+
+main section#zona-slider article.slick-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+}
+
+main section#zona-slider article.slick-slider figure#slide-01 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://cdn.pixabay.com/photo/2015/03/22/23/07/bora-bora-685303_960_720.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+
+/* Sección 01 */
+main section#seccion-01 { 
+    width: 100%; 
+    height: 500px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+}
+
+main section#seccion-01 figure#caja-01 { 
+    width: 50%; 
+    height: 500px;
+    margin: 0; 
+    position: relative; 
+    float: left; 
+}
+
+main section#seccion-01 figure#img-01 { 
+    width: 100%; 
+    height: 500px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-01.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+
+main section#seccion-01 figure#caja-01 figure#img-02 { 
+    width: 100%; 
+    height: 250px; 
+    top: -100%;
+    margin: 0; 
+    float: left; 
+    right: -100%;
+    position: relative; 
+    background: url('../img/img-02.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+
+main section#seccion-01 figure#caja-01 figure#img-03 { 
+    width: 35%; 
+    height: 250px; 
+    margin: 0; 
+    bottom: 100%;
+    right: -100%;
+    float: left; 
+    position: relative; 
+    background: url('../img/img-03.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-01 figure#img-04 { 
+    width: 65%; 
+    height: 250px; 
+    margin: 0; 
+    bottom: 100%;
+    right: -100%;
+    float: left; 
+    position: relative; 
+    background: url('../img/img-04.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 { 
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 80px 0 80px 0; 
+    position: relative; 
+    overflow: hidden;
+}
+
+main section#seccion-01 figure#caja-02 figure#img-05 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-05.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 figure#img-06 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-06.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 figure#img-07 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 0 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-07.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 figure#img-08 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 0 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-08.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 figure#img-09 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 0 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-09.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-02 figure#img-10 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-10.jpg') no-repeat top center; 
+    background-size: cover; 
+}
+
+main section#seccion-01 figure#caja-03 { 
+    width: 50%; 
+    height: 1400px; 
+    float: left; 
+    position: relative; 
+}
+
+main section#seccion-01 figure#caja-03 figure#img-11 { 
+    width: 100%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-11.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-03 figure#img-12 { 
+    width: 100%; 
+    height: 50%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-12.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-03 figure#img-13 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-13.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-03 figure#img-14 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-14.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-04 { 
+    width: 50%; 
+    height: 1400px; 
+    float: left; 
+    position: relative; 
+}
+
+main section#seccion-01 figure#caja-04 figure#img-15 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-15.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-04 figure#img-16 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-16.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-04 figure#img-17 { 
+    width: 100%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-17.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+main section#seccion-01 figure#caja-04 figure#img-18 { 
+    width: 100%; 
+    height: 50%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('../img/img-18.jpg') no-repeat top center; 
+    background-size: cover;
+}
+
+/* Zona de Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    aside#menu-moviles nav a { font-size: 1.5em; }
+
+    header div#capa-superior article figure a img {margin: 0 0 0 20px; }
+
+    main section#zona-slider { 
+        margin-top: 0px; 
+        height: 0vh; 
+    }
+
+    main section#zona-slider article.slick-slider { 
+        height: 0vh; 
+    }
+
+    main section#zona-slider article.slick-slider figure#slide-01 { 
+        height: 0vh; 
+        background-position: center;
+    }
+   
+
+ 
+    main section#seccion-01 figure#caja-01 { 
+        width: 50%; 
+        height: 1200px; 
+    }
+    main section#seccion-01 figure#img-01 { 
+        width: 100%; 
+        height: 600px; 
+    }
+    main section#seccion-01 figure#caja-01 figure#img-02 { 
+        width: 100%; 
+        height: 600px;
+        right: -100%; 
+        top: -50%;
+    }
+    main section#seccion-01 figure#caja-01 figure#img-03 { 
+        bottom: 50%; 
+        width: 100%; 
+        height: 600px; 
+    }
+    main section#seccion-01 figure#caja-01 figure#img-04 { 
+        bottom: 100%; 
+        right: 0%;
+        width: 100%; 
+        height: 600px; 
+    }
+
+
+    
+    main section#seccion-01 figure#caja-02 { 
+        width: 70%; 
+        height: 1900px; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-05 { 
+        width: 100%; 
+        height: 600px; 
+        margin: 0 0 5.5% 0; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-06 { 
+        width: 100%; 
+        height: 600px; 
+        margin: 0 0 5.5% 0; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-07 { 
+        width: 100%; 
+        height: 600px; 
+        margin: 0 0 5.5% 0; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-08 { 
+        width: 0%; 
+        margin: 0 0 0% 0; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-09 { 
+        width: 0%; 
+        margin: 0 0 0% 0; 
+    }
+    main section#seccion-01 figure#caja-02 figure#img-10 { 
+        width: 0%; 
+        margin: 0 0 0% 0; 
+    }
+
+
+    main section#seccion-01 figure#caja-03 { 
+        width: 100%; 
+        height: 1200px; 
+        float: left; 
+    }
+    main section#seccion-01 figure#caja-03 figure#img-11 { 
+        width: 100%; 
+        height: 50%; 
+        margin: 0; 
+        float: left; 
+    }
+    main section#seccion-01 figure#caja-03 figure#img-12 { 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        top: left; 
+        right: 0%; 
+    }
+    main section#seccion-01 figure#caja-03 figure#img-13 { 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        float: left; 
+    }
+    main section#seccion-01 figure#caja-03 figure#img-14 { 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        float: left; 
+    }
+
+
+    main section#seccion-01 figure#caja-04 { 
+        bottom: 50%; 
+        width: 100%; 
+        height: 1200px; 
+        float: left; 
+        margin-bottom: -40%;
+    }
+    main section#seccion-01 figure#caja-04 figure#img-15 { 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        float: right; 
+    }
+    main section#seccion-01 figure#caja-04 figure#img-16 { 
+        top: 30%; 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        float: right; 
+    }
+    main section#seccion-01 figure#caja-04 figure#img-17 { 
+        width: 50%; 
+        height: 30%; 
+        margin: 0; 
+        float: right; 
+    }
+    main section#seccion-01 figure#caja-04 figure#img-18 { 
+        width: 100%; 
+        height: 50%; 
+        margin: 0; 
+        float: left; 
+    }
+}
+
+@media only screen and (max-width: 799px){
+
+}
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+  
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+}
